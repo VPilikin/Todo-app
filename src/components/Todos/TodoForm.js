@@ -1,5 +1,6 @@
 import styles from './TodoForm.module.css'
 import { useState } from 'react'
+import Button from '../UI/Button'
 
 function TodoForm({ addTodo }) {
   const [todoText, setTodoText] = useState('')
@@ -25,9 +26,9 @@ function TodoForm({ addTodo }) {
         onChange={inputChange}
         placeholder="Enter new todo"
       ></input>
-      <button className={styles.button} type="submit">
+      <Button className={styles.button} type="submit" title="submit">
         Submit
-      </button>
+      </Button>
     </form>
   )
 }

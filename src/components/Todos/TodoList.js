@@ -1,15 +1,18 @@
 import styles from './TodoList.module.css'
 import Todo from './Todo'
 import { useState } from 'react'
-function TodoList({ todos, deleteTodo }) {
+function TodoList({ todos, deleteTodo, checkTodo }) {
   return (
     <>
       {todos.length ? (
-        todos.map((el, index) => {
+        todos.map((el) => {
           return (
-            <Todo key={index} index={index} deleteTodo={deleteTodo}>
-              {el}
-            </Todo>
+            <Todo
+              key={el.id}
+              deleteTodo={deleteTodo}
+              todo={el}
+              checkTodo={checkTodo}
+            />
           )
         })
       ) : (

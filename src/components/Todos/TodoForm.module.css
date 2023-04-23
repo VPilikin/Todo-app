@@ -3,15 +3,10 @@
 }
 
 .input {
+  box-sizing: border-box;
+  height: 50px;
   font-size: 20px;
   padding: 10px;
   margin-right: 20px;
   border-radius: 5px;
-}
-
-.button {
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: antiquewhite;
 }
